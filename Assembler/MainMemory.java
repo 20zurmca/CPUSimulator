@@ -1,0 +1,122 @@
+
+/**
+ * A class that represents the main memory in a computer 
+ *
+ * @author Cameron Zurmuhl
+ * @version 10/1/2017
+ */
+public class MainMemory
+{
+    //*************************FIELDS***********************//////
+    int size;  //size of the memory 
+    private Byte [] entries; //array of data
+
+    //***************CONSTRUCTORS****************///
+
+    /**
+     * Constructor for class memory
+     * @param size initializes the memory to the size passed
+     */
+    public MainMemory(int size)
+    {
+        this.entries = new Byte[size]; 
+        this.size = size;
+    }
+
+    ///*******************METHODS*********************///
+
+
+    /**
+     * Method getEntry returns a memory entry
+     * @param address the location of the entry
+     * @return a memory entry
+     */
+    public Byte getEntry(int address)
+    {
+        return entries[address];
+    }
+
+    /**
+     * Method addEntry adds data to memory in a Big-Endian form 
+     * @param data the data of the entry
+     * @param address location for the entry
+     * @param offset how many bytes to store the data in  
+     */
+    public void addEntry(String data, int pos, int offset)
+    {
+        String [] dataSplit = data.split("0x"); //splitting the string by the label
+        String hex = dataSplit[1];
+        int tmpPos = pos;
+        if(hex.length() > 2*offset)
+        {
+            hex = hex.substring(hex.length()-2*offset, hex.length()); //only storing what we are able to store 
+        }
+        int hexLength = hex.length();
+        int cnt = hexLength; //counter 
+
+        //filling the memory space
+        for(int i = 0; i<offset; i++)
+        {
+            entries[tmpPos++] = new Byte(0);
+        }
+        tmpPos--;
+        //filling in the data back to front 
+        String hexByte = null;
+        while(cnt > 0 )
+        {
+            if(cnt == 1)
+            {
+                hexByte = hex.substring(0,1);
+            }
+            else {
+                hexByte = hex.substring(cnt-2, cnt);
+            }
+            entries[tmpPos].setData(Integer.parseInt(hexByte, 16));
+            tmpPos--;
+            cnt -= 2;
+        }
+    }
+
+    /**
+     * Method printMemory prints the memory array
+     */
+    public void printMemory()
+    {
+        int count = 0;
+        for(Byte m : entries)
+        {
+            System.out.println("Entry " + count++ + " " + m);
+        }
+    }
+
+    /**
+     * Method getLength returns the number of entries in the main memory
+     * @return the length of entries
+     */
+    public int getLength()
+    {
+        return size;
+    }
+
+    @Override
+    public String toString()
+    {
+        String ret = "";
+        String hexByte = null;
+        for(int i = 0; i < size; i++)
+        {
+            if(entries[i] == null)
+            {
+                hexByte = "00"; //add a 0 if necessary for format
+            } else {
+                hexByte = Integer.toHexString(entries[i].getData());
+                if(hexByte.length() < 2) //formatting
+                {
+                    hexByte = "0" + hexByte;
+                }
+            }
+            ret += hexByte;
+        }
+        return ret;
+    }
+}
