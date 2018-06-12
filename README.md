@@ -12,24 +12,24 @@ java LaunchAssembler “AssemblyCode.as”** <br/>
 After running the program, check the Assembler directory for the file.
 
 ### Program 2: CPU_Emulator
-Descirption: A GUI that displays the processing of pre-written ARM assembly. The user can interact with the GUI using buttons.
-*Input: “AssemblyCode.o” “true/false”*
-(Note: If “AssemblyCode.o” is somehow not in this directory, copy the file over from the Assembler directory.)
-*Output: A GUI allowing the user to control a simulation*
-**Command line usage:
-java LaunchCPU “AssemblyCode.o” Boolean
-Pass “true” to Boolean value for noisy mode (a debugging mode which shows print statements of the simulation in the CLI). Else, pass “false”.**
+Descirption: A GUI that displays the processing of pre-written ARM assembly. The user can interact with the GUI using buttons. <br />
+*Input: “AssemblyCode.o” “true/false”* <br />
+(Note: If “AssemblyCode.o” is somehow not in this directory, copy the file over from the Assembler directory.) <br />
+*Output: A GUI allowing the user to control a simulation* <br />
+**Command line usage: <br />
+java LaunchCPU “AssemblyCode.o” Boolean <br />
+Pass “true” to Boolean value for noisy mode (a debugging mode which shows print statements of the simulation in the CLI). Else, pass “false”.** <br/>
 
 ### Program 3: Viewer
 Description: A GUI that displays the memory. The user can examine specific parts of the memory. The size of the memory is specified in the .as file for **Program 1**.
 
 **Command line usage:
-java LaunchVisualizer String, Boolean, int, int
-**String** is the name of the image file you would like to view. Make sure this file is in the “Viewer” directory. **Boolean** is either “true” for viewing the memory in hexadecimal, or “false” for binary.
-The **first int** is the starting position in memory you’d like to view. This int *must be in hexadecimal and divisible by 4. This int must be at least 0 and no greater than the second int.*
+java LaunchVisualizer String, Boolean, int, int<br/>
+**String** is the name of the image file you would like to view. Make sure this file is in the “Viewer” directory. **Boolean** is either “true” for viewing the memory in hexadecimal, or “false” for binary.<br />
+The **first int** is the starting position in memory you’d like to view. This int *must be in hexadecimal and divisible by 4. This int must be at least 0 and no greater than the second int.*<br />
 The **second int** is the ending position in memory you’d like to view. *This int must be in
 hexadecimal and divisible by 4. This int must be at least the first int and no greater than the
-maximum memory size (which is specified in the .as file).*
+maximum memory size (which is specified in the .as file).*<br />
 
-*Output: A GUI allowing the user to examine arbitrary memory.*
+*Output: A GUI allowing the user to examine arbitrary memory.* <br />
 **Example: java LaunchVisualizer “AssemblyCode.o” “true” 4 c**
