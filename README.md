@@ -15,7 +15,7 @@ After running the program, check the Assembler directory for the file.
 Descirption: A GUI that displays the processing of pre-written ARM assembly. The user can interact with the GUI using buttons. <br /><br />
 *Input: “AssemblyCode.o” “true/false”* <br />
 (Note: If “AssemblyCode.o” is somehow not in this directory, copy the file over from the Assembler directory.) <br />
-*Output: A GUI allowing the user to control a simulation* <br /><br />
+*Output: A GUI allowing the user to control a simulation. Opon completion of the LEGv8 assembly, a "state of the machine" summary report will be printed to the CLI and there is an optional export to file button. This report summarizes the content of all registers and flags.* <br /><br />
 **Command line usage: <br />
 java LaunchCPU “AssemblyCode.o” Boolean <br />
 Pass “true” to Boolean value for noisy mode (a debugging mode which shows print statements of the simulation in the CLI). Else, pass “false”.** <br/>
