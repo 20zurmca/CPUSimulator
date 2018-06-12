@@ -35,7 +35,7 @@ maximum memory size (which is specified in the .as file).*<br /><br />
 **Example: java LaunchVisualizer “AssemblyCode.o” “true” 4 c**
 
 ## Distribution
-The Jar_Distribution directory contains jar files that execute the programs with the same command line arguments as described. You will find project manuels in that folder that deliever the same information as the README.md. Project Documentation is available in the Documentation folder.
+The Jar_Distribution directory contains jar files that execute the programs with the same command line arguments as described. You will find project manuels in that folder that deliever the same information as the README.md. Project Documentation is available in the Documentation folder. Click on index.html
 
 ## Demo
 
