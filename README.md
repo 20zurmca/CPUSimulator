@@ -3,25 +3,25 @@
 This Project is composed of a three-program tool chain. This README will describe the order in which programs should be called and how to run the toolchain.
 
 ### Program 1: Assembler
-Description: A program that interprets main ARM assembly instructions and generates an image file (.o file)<br />
+Description: A program that interprets main ARM assembly instructions and generates an image file (.o file)<br /><br />
 *Input: “AssemblyCode.as”* <br />
-*Output: “AssemblyCode.o” in the working directory* <br />
+*Output: “AssemblyCode.o” in the working directory* <br /><br />
 **Command line usage: <br />
 java LaunchAssembler “AssemblyCode.as”** <br/>
 
 After running the program, check the Assembler directory for the file.
 
 ### Program 2: CPU_Emulator
-Descirption: A GUI that displays the processing of pre-written ARM assembly. The user can interact with the GUI using buttons. <br />
+Descirption: A GUI that displays the processing of pre-written ARM assembly. The user can interact with the GUI using buttons. <br /><br />
 *Input: “AssemblyCode.o” “true/false”* <br />
 (Note: If “AssemblyCode.o” is somehow not in this directory, copy the file over from the Assembler directory.) <br />
-*Output: A GUI allowing the user to control a simulation* <br />
+*Output: A GUI allowing the user to control a simulation* <br /><br />
 **Command line usage: <br />
 java LaunchCPU “AssemblyCode.o” Boolean <br />
 Pass “true” to Boolean value for noisy mode (a debugging mode which shows print statements of the simulation in the CLI). Else, pass “false”.** <br/>
 
 ### Program 3: Viewer
-Description: A GUI that displays the memory. The user can examine specific parts of the memory. The size of the memory is specified in the .as file for **Program 1**.
+Description: A GUI that displays the memory. The user can examine specific parts of the memory. The size of the memory is specified in the .as file for **Program 1**.<br /><br />
 
 **Command line usage:
 java LaunchVisualizer String, Boolean, int, int<br/>
@@ -29,7 +29,7 @@ java LaunchVisualizer String, Boolean, int, int<br/>
 The **first int** is the starting position in memory you’d like to view. This int *must be in hexadecimal and divisible by 4. This int must be at least 0 and no greater than the second int.*<br />
 The **second int** is the ending position in memory you’d like to view. *This int must be in
 hexadecimal and divisible by 4. This int must be at least the first int and no greater than the
-maximum memory size (which is specified in the .as file).*<br />
+maximum memory size (which is specified in the .as file).*<br /><br />
 
 *Output: A GUI allowing the user to examine arbitrary memory.* <br />
 **Example: java LaunchVisualizer “AssemblyCode.o” “true” 4 c**
