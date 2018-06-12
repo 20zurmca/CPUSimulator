@@ -7,7 +7,7 @@ Description: A program that interprets main ARM assembly instructions and genera
 *Input: “AssemblyCode.as”* <br />
 *Output: “AssemblyCode.o” in the working directory* <br />
 **Command line usage: <br />
-java LaunchAssembler “AssemblyCode.as”**
+java LaunchAssembler “AssemblyCode.as”** <br/>
 
 After running the program, check the Assembler directory for the file.
 
