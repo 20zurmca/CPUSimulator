@@ -3,10 +3,10 @@
 This Project is composed of a three-program tool chain. This README will describe the order in which programs should be called and how to run the toolchain.
 
 ### Program 1: Assembler
-Description: A program that interprets main ARM assembly instructions and generates an image file (.o file)
-*Input: “AssemblyCode.as”*
-*Output: “AssemblyCode.o” in the working directory*
-**Command line usage:
+Description: A program that interprets main ARM assembly instructions and generates an image file (.o file)<br />
+*Input: “AssemblyCode.as”* <br />
+*Output: “AssemblyCode.o” in the working directory* <br />
+**Command line usage: <br />
 java LaunchAssembler “AssemblyCode.as”**
 
 After running the program, check the Assembler directory for the file.
