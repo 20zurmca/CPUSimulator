@@ -33,3 +33,9 @@ maximum memory size (which is specified in the .as file).*<br /><br />
 
 *Output: A GUI allowing the user to examine arbitrary memory.* <br />
 **Example: java LaunchVisualizer “AssemblyCode.o” “true” 4 c**
+
+## Distribution
+The Jar_Distribution directory contains jar files that execute the program like CLI, except you have to add the -jar tag. You will find project manuels in that folder that deliever the same information as the README.md. Project Documentation is available in the Documentation folder.
+
+## Demo
+
