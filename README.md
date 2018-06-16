@@ -50,12 +50,12 @@ Note that the boxes labelled with "X_" are registers. PC is program counter. IR 
   <li> hex: <br />
     <img src = "https://github.com/20zurmca/CPUSimulator/blob/master/Demonstrations/viewer_demo_hex.gif">
   </li>
-  
+  <br/ >
   <li> bin: (Notice that the <em>Viewer Program</em> can specify the memory region that you can view) <br />
     <img src = "https://github.com/20zurmca/CPUSimulator/blob/master/Demonstrations/viewer_demo_binary.gif">
   </li>
 </ul>
-<b> Running Noisy Mode for debugging: </b>
+<br/> <b> Running Noisy Mode for debugging: </b>
 <img src = "https://github.com/20zurmca/CPUSimulator/blob/master/Demonstrations/noisy_mode.gif">
 
 ## Future Expandability
