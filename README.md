@@ -59,4 +59,4 @@ Note that the boxes labelled with "X_" are registers. PC is program counter. IR 
 <img src = "https://github.com/20zurmca/CPUSimulator/blob/master/Demonstrations/noisy_mode.gif">
 
 ## Future Expandability
-
+Future expandability includes adding more ARM instructions to the parsers as well as cleaning up the GUI. The goal is to be able to design an assembler that can simulate any given object file. This project is ~80% there
