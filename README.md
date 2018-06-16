@@ -40,7 +40,7 @@ The Jar_Distribution directory contains jar files that execute the programs with
 ## Demo
 <b>Running the simulation on "fast mode" with binary. ARM assembly code in lower right corner. Notice the viewer program also launches:</b>
 <img src = "https://github.com/20zurmca/CPUSimulator/blob/master/Demonstrations/cpu_emulator.gif"> <br />
-Note that the boxes labelled with "X_" are registers. 
+Note that the boxes labelled with "X_" are registers. PC is program counter. IR is instruction register. 
 
 <b>After clicking "export to file:":</b>
 
