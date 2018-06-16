@@ -39,6 +39,8 @@ The Jar_Distribution directory contains jar files that execute the programs with
 
 ## Demo
 Running the simulation on "fast mode" with binary:
+<img src = "https://github.com/20zurmca/CPUSimulator/blob/master/Demonstrations/cpu_emulator.gif"> <br />
+Note that the boxes labelled with "X_" are registers.
 
 Running the Simulation of "fast mode" with hex:
 
