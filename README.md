@@ -43,17 +43,20 @@ The Jar_Distribution directory contains jar files that execute the programs with
 Note that the boxes labelled with "X_" are registers. PC is program counter. IR is instruction register. 
 
 <b>After clicking "export to file:":</b>
+<img src = "https://github.com/20zurmca/CPUSimulator/blob/master/Demonstrations/state_of_the_machine.PNG">
 
 <b> Demonstrating the memory viewer:</b>
 <ul>
   <li> hex: <br />
+    <img src = "https://github.com/20zurmca/CPUSimulator/blob/master/Demonstrations/viewer_demo_hex.gif">
   </li>
   
   <li> bin: (Notice that the <em>Viewer Program</em> can specify the memory region that you can view) <br />
-
+    <img src = "https://github.com/20zurmca/CPUSimulator/blob/master/Demonstrations/viewer_demo_binary.gif">
   </li>
 </ul>
-<b> Running Noisy Mode: </b>
+<b> Running Noisy Mode for debugging: </b>
+<img src = "https://github.com/20zurmca/CPUSimulator/blob/master/Demonstrations/noisy_mode.gif">
 
 ## Future Expandability
 
