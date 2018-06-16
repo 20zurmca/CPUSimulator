@@ -3,7 +3,7 @@
 This Project is composed of a three-program tool chain. This README will describe the order in which programs should be called and how to run the toolchain.
 
 ### Program 1: Assembler
-Description: A program that interprets main ARM assembly instructions and generates an image file (.o file)<br /><br />
+Description: A program that interprets common ARM assembly instructions and generates an image file (.o file)<br /><br />
 *Input: “AssemblyCode.as”* <br />
 *Output: “AssemblyCode.o” in the working directory* <br /><br />
 **Command line usage: <br />
@@ -38,4 +38,9 @@ maximum memory size (which is specified in the .as file).*<br /><br />
 The Jar_Distribution directory contains jar files that execute the programs with the same command line arguments as described. You will find project manuels in that folder that deliever the same information as the README.md. Project Documentation is available in the Documentation folder. Click on index.html
 
 ## Demo
+Running the simulation on "fast mode" with binary:
+
+Running the Simulation of "fast mode" with hex:
+
+Demonstrating the memory viewer: 
 
