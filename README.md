@@ -38,7 +38,7 @@ maximum memory size (which is specified in the .as file).*<br /><br />
 The Jar_Distribution directory contains jar files that execute the programs with the same command line arguments as described. You will find project manuels in that folder that deliever the same information as the README.md. Project Documentation is available in the Documentation folder. Click on index.html
 
 ## Demo
-<b>Running the simulation on "fast mode" with binary. ARM assembly code in lower right corner. Notice the viewer program also launches:</b>
+<b>Running the simulation on "fast mode" with binary. ARM assembly code in lower right corner. Notice the <b>Viewer Program</b> also launches:</b>
 <img src = "https://github.com/20zurmca/CPUSimulator/blob/master/Demonstrations/cpu_emulator.gif"> <br />
 Note that the boxes labelled with "X_" are registers. PC is program counter. IR is instruction register. 
 
@@ -51,7 +51,7 @@ Note that the boxes labelled with "X_" are registers. PC is program counter. IR 
     <img src = "https://github.com/20zurmca/CPUSimulator/blob/master/Demonstrations/viewer_demo_hex.gif">
   </li>
   <br/ >
-  <li> bin: (Notice that the <em>Viewer Program</em> can specify the memory region that you can view) <br />
+  <li> bin: (Notice that the <b>Viewer Program</b> can specify the memory region that you can view) <br />
     <img src = "https://github.com/20zurmca/CPUSimulator/blob/master/Demonstrations/viewer_demo_binary.gif">
   </li>
 </ul>
