@@ -38,13 +38,13 @@ maximum memory size (which is specified in the .as file).*<br /><br />
 The Jar_Distribution directory contains jar files that execute the programs with the same command line arguments as described. You will find project manuels in that folder that deliever the same information as the README.md. Project Documentation is available in the Documentation folder. Click on index.html
 
 ## Demo
-<em>Running the simulation on "fast mode" with binary. ARM assembly code in lower right corner:</em>
+<b>Running the simulation on "fast mode" with binary. ARM assembly code in lower right corner:</b>
 <img src = "https://github.com/20zurmca/CPUSimulator/blob/master/Demonstrations/cpu_emulator.gif"> <br />
 Note that the boxes labelled with "X_" are registers. 
 
-<em>After clicking "export to file:":</em>
+<b>After clicking "export to file:":</b>
 
-<em> Demonstrating the memory viewer:</em>
+<b> Demonstrating the memory viewer:</b>
 <ul>
   <li> hex: <br />
   </li>
