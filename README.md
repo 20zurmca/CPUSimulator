@@ -3,7 +3,7 @@
 This Project is composed of a three-program tool chain. This README will describe the order in which programs should be called and how to run the toolchain.
 
 ### Program 1: Assembler
-Description: A program that interprets common ARM assembly instructions and generates an image file (.o file)<br /><br />
+Description: A program that interprets common ARM assembly instructions and generates an image file (.o file) and stores the program instructrions into simulated main memory<br /><br />
 *Input: “AssemblyCode.as”* <br />
 *Output: “AssemblyCode.o” in the working directory* <br /><br />
 **Command line usage: <br />
