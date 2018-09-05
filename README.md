@@ -21,7 +21,7 @@ java LaunchCPU “AssemblyCode.o” Boolean <br />
 Pass “true” to Boolean value for noisy mode (a debugging mode which shows print statements of the simulation in the CLI). Else, pass “false”.** <br/>
 
 ### Program 3: Viewer
-Description: A GUI that displays the memory. The user can examine specific parts of the memory. The size of the memory is specified in the .as file for **Program 1**.<br /><br />
+Description: A GUI that displays the simulated memory. The user can examine specific parts of the memory. The size of the memory is specified in the .as file for **Program 1**.<br /><br />
 
 **Command line usage:
 java LaunchVisualizer String, Boolean, int, int<br/>
